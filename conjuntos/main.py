@@ -52,7 +52,7 @@ no mínimo um arquivo de testes criado pelo próprio professor.
  """
 from itertools import product
 
-txt = input("digite o nome do arquivo "); #o arquivo de texto deve estar na mesma pasta do programa, ou deve ser colocado o caminho absoluto do arquivo
+txt = input("digite o nome do arquivo "); #o arquivo de texto deve estar na mesma pasta do programa (ex: teste1.txt), ou deve ser colocado o caminho absoluto do arquivo
 
 arquivo = open(txt, "r") #abre o arquivo de texto
 linhas = arquivo.readlines() #le todas as linhas e aloca em um array
@@ -84,13 +84,13 @@ for i in range(total):
 
     if ((linhas[atual]).strip().upper() == 'U'): #faz as operacoes de uniao, interseccao, diferenca e produto cartesiano
         final = conjunto1.union(conjunto2)
-        print(f"Uniao: Conjunto 1 {conjunto1}, Conjunto 2 {conjunto2}. Resultado: {final}")
+        print(f"União: Conjunto 1 {conjunto1}, Conjunto 2 {conjunto2}. Resultado: {final}")
     elif ((linhas[atual]).strip().upper() == 'I'):
         final = conjunto1.intersection(conjunto2)
-        print(f"Interseccao: Conjunto 1 {conjunto1}, Conjunto 2 {conjunto2}. Resultado: {final}")
+        print(f"Intersecção: Conjunto 1 {conjunto1}, Conjunto 2 {conjunto2}. Resultado: {final}")
     elif ((linhas[atual]).strip().upper() == 'D'):
         final = conjunto1.difference(conjunto2)
-        print(f"Diferenca: Conjunto 1 {conjunto1}, Conjunto 2 {conjunto2}. Resultado: {final}")
+        print(f"Diferença: Conjunto 1 {conjunto1}, Conjunto 2 {conjunto2}. Resultado: {final}")
     elif ((linhas[atual]).strip().upper() == 'C'):
         listas = [conjunto1, conjunto2]
         print(f"Produto Cartesiano: Conjunto 1 {conjunto1}, Conjunto 2 {conjunto2}. Resultado: ", end="")
