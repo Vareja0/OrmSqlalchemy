@@ -1,0 +1,143 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 85%;
+    height: 60px;
+    background-color: white;
+    margin: 0px;
+    border-bottom: 1px solid #c9c9c9;
+    
+}
+body{
+    margin: 0px;
+}
+.usersButton{
+    height: 30px;
+    width: 50px;
+    background-color: #242424;
+    border: none;
+    border-radius: 8px;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+.icon{
+    height: 40px;
+}
+.title{
+    width: 100%;
+    height: 400px;
+    margin: 0px;
+    flex-direction: column;
+    background-color: #f5f3f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+.port{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+}
+.box{
+    border: 1px solid #c9c9c9;
+    padding: 20px;
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    text-wrap: wrap;
+    width: 250px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+#head{
+    margin-left: 6.7%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+#page-container{
+    position: relative;
+    min-height: 100vh;
+}
+#content-wrap{
+    padding-bottom: 2.5rem;
+}
+#footer{
+    width: 100%;
+    bottom: 0;
+    border-top: 1px solid #c9c9c9;
+    height: 2.5rem;
+}
+
+.userIcon{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.usersList{
+    display: flex;
+    flex-direction: column;
+   
+}
+.usersList > h2{
+    margin-left: 25px;
+}
+.usersContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    gap: 80px;
+    height: 100vh;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+.cima{
+    display: flex;
+    gap: 10%;
+}
+#newPost{
+    width: 80px;
+}
+.postForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.postForm > input, textarea{
+    box-shadow: #c9c9c9 5px 5px;
+    border: #c9c9c9 1px solid;
+}
+.postForm > input{
+    margin-bottom: 50px;
+    margin-right: 46.5%;
+}
+.postForm > label{
+    margin-right: 46.5%;
+}
+#submitButton{
+    width: 150px;
+    height: 50px;
+    margin-left: 45%;
+    margin-top: 5%;
+    font-size: 20px;
+}
+.usersButao{
+    width: 100px;
+}

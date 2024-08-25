@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs'); -%>
+<div class="usersContainer">
+ <% for(let i = 0; i < tamanho; i++){ %>
+    
+        <div class="usersList">
+            <div class="userIcon"><%= user[i].nome[0] %></div>
+            <h2><%= user[i].nome %></h2>
+            <form action="/users" method="post">
+                <input type="submit" class="usersButton usersButao" value="Selecionar"  name=<%= user[i].id %> id=<%= user[i].id %>>
+            </form>
+        </div>
+
+    
+    <% } %>
+</div>
+
+<%- include('partials/footer.ejs'); -%>

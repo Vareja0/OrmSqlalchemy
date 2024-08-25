@@ -1,0 +1,25 @@
+<%- include('partials/header.ejs'); -%>
+
+    
+    <div class="title">
+        <h1><%= name[number].nome %></h1>
+    </div>
+    <h2 id="head">heading</h2>
+    <div class="port">
+        <% for(let i = 0; i < user.length; i++){ %>
+        <div class="box">
+            <img src=<%= user[i].imagem %>>
+            <h3><%= user[i].titulo %></h3>
+            <p><%= user[i].conteudo %></p>
+            <form action="/seeMore" method="get">
+                <input type="submit" class="usersButton" value="ver mais" id="newPost">
+            </form>
+        </div>
+        <% } %>
+    </div>
+</div>
+</div>
+
+
+<%- include('partials/footer.ejs'); -%>
+</html>
